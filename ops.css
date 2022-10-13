@@ -1,0 +1,73 @@
+#preloader {
+    background: black url(./images/logo.png) no-repeat center;
+    background-size: 20%;
+    width: 100vw;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    transition: all ease-in-out 2s;
+}
+.hidden {
+    display: none;
+}
+.visuallyhidden {
+    opacity: 0;
+}
+
+body{
+    /* for preloader */
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #006466;
+    color: white;
+    background: url(./images/clock-tower.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* overflow-y: hidden; */
+    /* overscroll-behavior-y: none; */
+}
+
+ol {
+    font-size: large;
+    margin-left: 2rem;
+    padding-left: .7rem;
+    text-align: left;
+}
+
+#score, #clear-checkbox{
+    font-size: 1.5rem;
+}
+
+ol li{
+    text-transform: capitalize;
+    line-height: 2.3rem;
+    text-shadow: .5px .5px 1px white;
+    padding-bottom: 1px;
+    transition: all 5s linear;
+}
+
+a{
+    color: white;
+}
+
+#score, #clear-checkbox{
+    margin: 2px;
+}
+
+.show {
+    opacity: 1;
+}
+
+.hide {
+    opacity: 0;
+}
+
+#score:hover,#clear-checkbox:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
