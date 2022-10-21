@@ -21,9 +21,10 @@ body{
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: #006466;
+    /* background-color: #006466; */
     color: white;
-    background: url(./images/clock-tower.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/clock-tower.png);
+    /* background-blend-mode: lighten; */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
